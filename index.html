@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheer-Up Button</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; background-color: #ffe4e1; }
+        h1 { color: #ff6b81; margin-top: 50px; }
+        #message { font-size: 1.5em; margin-top: 20px; color: #333; }
+        button { padding: 12px 24px; font-size: 1.2em; border: none; background-color: #ff6b81; color: white; cursor: pointer; border-radius: 5px; }
+        button:hover { background-color: #ff4f61; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>Feeling Down? Click Here!</h1>
+    <button onclick="cheerUp()">Cheer Me Up!</button>
+    <p id="message" class="hidden"></p>
+
+    <script>
+        const messages = [
+            "You're incredible! Keep going! 💖",
+            "Smile! The world is brighter with you in it. 😊",
+            "Tough times don't last, but tough people do. 💪",
+            "You're loved more than you know. ❤️",
+            "Sending virtual hugs! 🤗",
+            "Breathe in, breathe out. You've got this! 🌟",
+            "No matter what, you are enough. 💕",
+            "Every storm runs out of rain. Hang in there. ☀️"
+        ];
+        
+        function cheerUp() {
+            const msg = document.getElementById("message");
+            msg.innerText = messages[Math.floor(Math.random() * messages.length)];
+            msg.classList.remove("hidden");
+        }
+    </script>
+</body>
+</html>
