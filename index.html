@@ -7,6 +7,7 @@
     <style>
         body { font-family: Arial, sans-serif; text-align: center; background-color: #ffe4e1; }
         h1 { color: #ff6b81; margin-top: 50px; }
+        h2 { color: #ff4f61; font-size: 1.8em; margin-bottom: 10px; }
         #message { font-size: 1.5em; margin-top: 20px; color: #333; }
         button { padding: 12px 24px; font-size: 1.2em; border: none; background-color: #ff6b81; color: white; cursor: pointer; border-radius: 5px; }
         button:hover { background-color: #ff4f61; }
@@ -14,8 +15,9 @@
     </style>
 </head>
 <body>
-    <h1>Feeling Down? Click Here!</h1>
-    <button onclick="cheerUp()">Cheer Me Up!</button>
+    <h2>🎉 Happy Birthday, Kesiuh! 🎂</h2>
+    <h1>click the button !</h1>
+    <button onclick="cheerUp()">click me !</button>
     <p id="message" class="hidden"></p>
 
     <script>
@@ -27,9 +29,32 @@
             "Sending virtual hugs! 🤗",
             "Breathe in, breathe out. You've got this! 🌟",
             "No matter what, you are enough. 💕",
-            "Every storm runs out of rain. Hang in there. ☀️"
+            "Every storm runs out of rain. Hang in there. ☀️",
+            "Even the most beautiful heartbeats need a little rest. Take care of yourself. 💙",
+            "You're the kind of person who makes the world a little softer, a little kinder. 🌸",
+            "If today feels heavy, just know you're strong enough to carry it. 🏋️‍♀️",
+            "You're the calm in the storm, the steady rhythm in the chaos. 🎵",
+            "You read heartbeats like poetry—don't forget your own heart deserves care too. ❤️",
+            "Your kindness beats stronger than any monitor could ever show. 💓",
+            "Even superheroes need a break—take a deep breath, you're doing amazing. 🦸‍♀️",
+            "Your intelligence, your patience, your strength—it’s all noticed, even if no one says it out loud. ✨",
+            "The world is better because you're in it. Simple as that. 🌍",
+            "Your mind is as sharp as an ECG spike—trust yourself. 📈",
+            "You're more than your job, but wow, you're really good at it. 👏",
+            "A bad day doesn’t define you. Tomorrow is another chance. 🌿",
+            "If life had a 'monitor tech' for emotions, yours would show resilience, courage, and so much heart. 💖",
+            "You're not just reading rhythms—you create them. Keep making life beautiful. 🎶",
+            "Even if your energy is flatlining today, tomorrow’s another beat. Rest up. ⏳",
+            "You work in a place where every second matters, but don’t forget—you matter too. 💙",
+            "The way you handle chaos with grace? Yeah, that’s something special. 🌟",
+            "Your presence is like a steady pulse in a noisy world—strong, dependable, and important. 💓",
+            "Remember: even the busiest ER slows down. You deserve your own peace too. 🌿",
+            "You catch the small things that others might miss—never forget how valuable that makes you. 🔍",
+            "Your kindness is like oxygen—people don’t always notice it, but they’d struggle without it. 💨",
+            "Not all heroes wear capes—some wear scrubs and read EKGs. 🏥",
+            "✨ Special birthday message for you, Kesia: I hope today is as amazing as you are! 🎂🥳"
         ];
-        
+
         function cheerUp() {
             const msg = document.getElementById("message");
             msg.innerText = messages[Math.floor(Math.random() * messages.length)];
